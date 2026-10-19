@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Check interval (seconds)",
+        "description": "How often each host is checked. A host can set its own interval in its status settings. From 5 to 3600."
+      }
+    }
+  }
+}

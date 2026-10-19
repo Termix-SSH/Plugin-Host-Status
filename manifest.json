@@ -1,0 +1,52 @@
+{
+  "id": "host-status",
+  "name": "Host Status",
+  "version": "1.0.0",
+  "description": "Shows if each host is online with a dot in the host list, checked by connecting to its port.",
+  "author": {
+    "name": "Termix"
+  },
+  "license": "Apache-2.0",
+  "repository": "https://github.com/Termix-SSH/Plugin-Host-Status",
+  "docs": "https://docs.termix.site/plugins/host-status",
+  "category": "Monitoring",
+  "icon": "Activity",
+  "features": [
+    "An online or offline dot for every host",
+    "Checks the host's port and never logs in",
+    "Checks through jump hosts",
+    "An open session or a working login counts as online",
+    "Set the check interval for everyone or for one host"
+  ],
+  "env": [],
+  "engine": {
+    "termix": ">=26.10.3",
+    "api": "^1.5"
+  },
+  "capabilities": [
+    "hosts:read",
+    "hosts:status-provide",
+    "network:probe",
+    "network:serve",
+    "ssh:connect",
+    "events:core",
+    "users:impersonate"
+  ],
+  "locales": "locales",
+  "platforms": ["linux", "win32", "darwin"],
+  "contributes": {
+    "settings": {
+      "admin": [
+        {
+          "key": "intervalSeconds",
+          "type": "number",
+          "labelKey": "settings.admin.intervalSeconds.label",
+          "descriptionKey": "settings.admin.intervalSeconds.description",
+          "min": 5,
+          "max": 3600,
+          "default": 30
+        }
+      ]
+    }
+  }
+}

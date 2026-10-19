@@ -1,0 +1,16 @@
+node_modules
+dist
+coverage
+*.log
+.env
+*.tmxplug
+*.tmxplug.sig
+termix-plugin-signing.key
+.termix-tables-*
+
+# Editors and OS
+.idea/
+.vscode/
+.claude/
+.DS_Store
+Thumbs.db
