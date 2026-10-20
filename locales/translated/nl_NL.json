@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Controle-interval (seconden)",
+        "description": "Hoe vaak elke host wordt gecontroleerd. Een host kan zijn eigen interval instellen in de statusinstellingen. Van 5 tot 3600."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Prüfintervall (Sekunden)",
+        "description": "Wie oft jeder Host überprüft wird. Ein Host kann sein eigenes Intervall in seinen Status-Einstellungen festlegen. Von 5 bis 3600."
+      }
+    }
+  }
+}

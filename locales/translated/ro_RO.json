@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interval de verificare (secunde)",
+        "description": "Frecvența cu care fiecare gazdă este verificată. O gazdă își poate seta propriul interval în setările de stare. De la 5 la 3600."
+      }
+    }
+  }
+}

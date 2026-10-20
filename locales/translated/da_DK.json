@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Tjekinterval (sekunder)",
+        "description": "Hvor ofte hver vært tjekkes. En vært kan indstille sit eget interval i statusindstillingerne. Fra 5 til 3600."
+      }
+    }
+  }
+}

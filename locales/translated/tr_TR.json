@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Kontrol aralığı (saniye)",
+        "description": "Her bir ana bilgisayarın ne sıklıkla kontrol edileceği. Bir ana bilgisayar, durum ayarlarında kendi aralığını belirleyebilir. 5 ile 3600 arasında."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Intervalle de vérification (secondes)",
+        "description": "Fréquence de vérification de chaque hôte. Un hôte peut définir son propre intervalle dans ses paramètres de statut. De 5 à 3600."
+      }
+    }
+  }
+}

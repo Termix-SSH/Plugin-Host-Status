@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Kontrolli sagedus (sekundites)",
+        "description": "Kui tihti iga hosti kontrollitakse. Host saab oma sageduse määrata oma oleku seadetes. Väärtus peab olema vahemikus 5–3600."
+      }
+    }
+  }
+}

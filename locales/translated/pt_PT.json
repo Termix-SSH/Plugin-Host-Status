@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Intervalo de verificação (segundos)",
+        "description": "Com que frequência cada host é verificado. Um host pode definir o seu próprio intervalo nas definições de estado. De 5 a 3600."
+      }
+    }
+  }
+}

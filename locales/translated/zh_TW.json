@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "檢查間隔（秒）",
+        "description": "檢查每個主機的時間間隔。主機可以在其狀態設定中設定自己的間隔。範圍為 5 到 3600。"
+      }
+    }
+  }
+}

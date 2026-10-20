@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Selang semakan (saat)",
+        "description": "Seberapa kerap setiap hos diperiksa. Hos boleh menetapkan selangnya sendiri dalam tetapan statusnya. Dari 5 hingga 3600."
+      }
+    }
+  }
+}

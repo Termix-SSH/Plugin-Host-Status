@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interval provjere (sekunde)",
+        "description": "Koliko često se svaki host provjerava. Host može postaviti vlastiti interval u postavkama statusa. Od 5 do 3600."
+      }
+    }
+  }
+}

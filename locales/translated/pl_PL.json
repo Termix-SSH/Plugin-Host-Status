@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interwał sprawdzania (sekundy)",
+        "description": "Jak często sprawdzany jest każdy host. Host może ustawić własny interwał w ustawieniach statusu. Od 5 do 3600."
+      }
+    }
+  }
+}

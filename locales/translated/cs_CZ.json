@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interval kontroly (sekundy)",
+        "description": "Jak často je každý hostitel kontrolován. Hostitel si může nastavit vlastní interval ve svých nastaveních stavu. Rozsah od 5 do 3600."
+      }
+    }
+  }
+}

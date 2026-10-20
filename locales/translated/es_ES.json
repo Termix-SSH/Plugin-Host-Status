@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Intervalo de comprobación (segundos)",
+        "description": "Frecuencia con la que se comprueba cada host. Un host puede establecer su propio intervalo en la configuración de su estado. De 5 a 3600."
+      }
+    }
+  }
+}

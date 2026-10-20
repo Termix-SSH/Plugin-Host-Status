@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "检查间隔（秒）",
+        "description": "检查每台主机的频率。主机可以在其状态设置中设置自己的间隔。范围为 5 到 3600。"
+      }
+    }
+  }
+}

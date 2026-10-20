@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Sjekkeintervall (sekunder)",
+        "description": "Hvor ofte hver vert sjekkes. En vert kan angi sitt eget intervall i statusinnstillingene. Fra 5 til 3600."
+      }
+    }
+  }
+}

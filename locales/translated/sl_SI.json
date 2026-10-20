@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interval preverjanja (sekunde)",
+        "description": "Kako pogosto se vsak gostitelj preveri. Gostitelj lahko v nastavitvah stanja določi svoj lasten interval. Od 5 do 3600."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Ellenőrzési időköz (másodperc)",
+        "description": "Mennyire gyakran legyenek ellenőrizve a hostok. Egy host saját időközt is beállíthat a státuszbeállításaiban. 5 és 3600 között."
+      }
+    }
+  }
+}

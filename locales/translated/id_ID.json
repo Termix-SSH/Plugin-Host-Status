@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Interval pengecekan (detik)",
+        "description": "Seberapa sering setiap host diperiksa. Host dapat mengatur intervalnya sendiri di pengaturan statusnya. Dari 5 hingga 3600."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Kontrollintervall (sekunder)",
+        "description": "Hur ofta varje värd kontrolleras. En värd kan ställa in sitt eget intervall i sina statusinställningar. Mellan 5 och 3600."
+      }
+    }
+  }
+}

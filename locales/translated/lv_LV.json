@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Pārbaudes intervāls (sekundes)",
+        "description": "Cik bieži tiek pārbaudīts katrs resursdators. Resursdators var iestatīt savu intervālu tā statusa iestatījumos. No 5 līdz 3600."
+      }
+    }
+  }
+}

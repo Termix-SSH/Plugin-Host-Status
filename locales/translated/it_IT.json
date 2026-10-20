@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Intervallo di controllo (secondi)",
+        "description": "Frequenza con cui viene controllato ogni host. Un host può impostare il proprio intervallo nelle impostazioni di stato. Da 5 a 3600."
+      }
+    }
+  }
+}

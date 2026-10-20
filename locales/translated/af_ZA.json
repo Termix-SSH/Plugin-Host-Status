@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Kontroleinterval (sekondes)",
+        "description": "Hoe gereeld elke gasheer gecontroleer word. 'n Gasheer kan sy eie interval in sy statusinstellings stel. Van 5 tot 3600."
+      }
+    }
+  }
+}

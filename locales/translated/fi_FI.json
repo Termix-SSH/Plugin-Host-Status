@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Tarkistusväli (sekuntia)",
+        "description": "Kuinka usein jokainen isäntä tarkistetaan. Isäntä voi määrittää oman tarkistusvälin tilasetinguksissaan. Arvot 5–3600."
+      }
+    }
+  }
+}

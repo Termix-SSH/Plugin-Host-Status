@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Khoảng thời gian kiểm tra (giây)",
+        "description": "Tần suất kiểm tra mỗi host. Một host có thể đặt riêng khoảng thời gian của nó trong cài đặt trạng thái. Từ 5 đến 3600."
+      }
+    }
+  }
+}

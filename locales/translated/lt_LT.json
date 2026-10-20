@@ -1,0 +1,10 @@
+{
+  "settings": {
+    "admin": {
+      "intervalSeconds": {
+        "label": "Tikrinimo intervalas (sekundės)",
+        "description": "Kaip dažnai tikrinamas kiekvienas serveris. Serveris gali nustatyti savo intervalą jo būsenos nustatymuose. Nuo 5 iki 3600."
+      }
+    }
+  }
+}
