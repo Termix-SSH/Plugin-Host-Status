@@ -3,6 +3,7 @@ import type { PluginContext } from "@termix-ssh/plugin-sdk/backend";
 import { createStatusDeps } from "./deps.js";
 import { HostStatusService, normalizeInterval } from "./status-service.js";
 import { registerRoutes } from "./routes.js";
+import { registerOperations } from "./operations.js";
 
 export async function activate(ctx: PluginContext) {
   const { deps, setInterval } = createStatusDeps(ctx);
@@ -10,6 +11,7 @@ export async function activate(ctx: PluginContext) {
 
   const service = new HostStatusService(deps);
   ctx.hosts.status.provide(service);
+  registerOperations(ctx, service);
 
   // Changing the setting in the admin screen re-times running checks.
   ctx.settings.onChange("intervalSeconds", (value) => {
