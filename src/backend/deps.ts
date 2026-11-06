@@ -1,4 +1,5 @@
 import type { PluginContext } from "@termix-ssh/plugin-sdk/backend";
+import { sendStatusAlert } from "./alerts.js";
 import {
   DEFAULT_STATUS_INTERVAL,
   normalizeInterval,
@@ -57,8 +58,14 @@ export function createStatusDeps(ctx: PluginContext): {
       await ctx.settings.set("intervalSeconds", interval);
     },
     globalInterval: () => interval,
-    emit: (payload: HostStatusPayload) =>
-      ctx.events.emit("host.status", payload),
+    emit: (payload: HostStatusPayload) => {
+      ctx.events.emit("host.status", payload);
+      void sendStatusAlert(ctx, payload).catch((error) =>
+        ctx.log.warn(
+          `Could not send a host status alert: ${error instanceof Error ? error.message : String(error)}`,
+        ),
+      );
+    },
     warn: (message, error) =>
       ctx.log.warn(
         error instanceof Error ? `${message}: ${error.message}` : message,

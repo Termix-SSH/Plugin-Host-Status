@@ -32,6 +32,7 @@
     "ssh:connect",
     "events:core",
     "users:impersonate",
+    "notify:send",
     "operations:provide"
   ],
   "locales": "locales",
@@ -47,6 +48,13 @@
           "min": 5,
           "max": 3600,
           "default": 30
+        },
+        {
+          "key": "alertOnOffline",
+          "type": "boolean",
+          "labelKey": "settings.admin.alertOnOffline.label",
+          "descriptionKey": "settings.admin.alertOnOffline.description",
+          "default": true
         }
       ]
     },

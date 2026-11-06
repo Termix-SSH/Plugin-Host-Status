@@ -4,6 +4,10 @@
       "intervalSeconds": {
         "label": "Check interval (seconds)",
         "description": "How often each host is checked. A host can set its own interval in its status settings. From 5 to 3600."
+      },
+      "alertOnOffline": {
+        "label": "Alert when a host goes offline",
+        "description": "Send the host's owner an alert when a checked host stops answering and when it is back."
       }
     }
   },
