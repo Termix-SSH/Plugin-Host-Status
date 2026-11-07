@@ -31,6 +31,8 @@ Read the [docs](https://docs.termix.site/plugins/host-status) to set it up and u
 - Checks through jump hosts
 - An open session or a working login counts as online
 - Set the check interval for everyone or for one host
+- An alert when a host goes offline and when it is back
+- An Online tile on the host page and in the All hosts table
 
 <br />
 
