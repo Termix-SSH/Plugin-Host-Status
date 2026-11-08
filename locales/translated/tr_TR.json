@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Kontrol aralığı (saniye)",
         "description": "Her bir ana bilgisayarın ne sıklıkla kontrol edileceği. Bir ana bilgisayar, durum ayarlarında kendi aralığını belirleyebilir. 5 ile 3600 arasında."
+      },
+      "alertOnOffline": {
+        "label": "Bir sunucu çevrimdışı olduğunda uyar",
+        "description": "Seçili bir sunucu yanıt vermediğinde ve tekrar bağlandığında, sunucunun sahibine bir uyarı gönder."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Sunucu durumunu kontrol et",
+      "description": "Gördüğünüz sunucuların çevrimiçi olup olmadığını kontrol edin."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Sunucu durumunu kontrol et"
+    },
+    "online": {
+      "title": "Çevrimiçi"
     }
   }
 }

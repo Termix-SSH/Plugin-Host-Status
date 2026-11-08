@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0
+
+### Added
+
+- Check whether a host is online through Termix actions, with an Online tile on the host page and in the All hosts table
+- Permission Check host status
+- An alert when a checked host goes offline and when it is back, with an admin setting to turn it off
+
+### Changed
+
+- Needs Termix 26.11.1 or newer
+
 ## 1.0.0
 
 ### Added

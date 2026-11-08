@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "檢查間隔（秒）",
         "description": "檢查每個主機的時間間隔。主機可以在其狀態設定中設定自己的間隔。範圍為 5 到 3600。"
+      },
+      "alertOnOffline": {
+        "label": "主機離線時發出警示",
+        "description": "當已勾選的主機停止回應，以及重新連線時，向其擁有者發送警示。"
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "查看主機狀態",
+      "description": "查看您有權限查看的主機是否線上。"
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "檢查主機狀態"
+    },
+    "online": {
+      "title": "線上"
     }
   }
 }

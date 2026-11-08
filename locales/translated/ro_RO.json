@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval de verificare (secunde)",
         "description": "Frecvența cu care fiecare gazdă este verificată. O gazdă își poate seta propriul interval în setările de stare. De la 5 la 3600."
+      },
+      "alertOnOffline": {
+        "label": "Alertează când un gazdă devine indisponibilă",
+        "description": "Trimite proprietarului gazdei o alertă când o gazdă selectată încetează să răspundă și când revine online."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Verifică starea gazdei",
+      "description": "Verifică dacă gazdele pe care le poți vedea sunt online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Verifică starea gazdei"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

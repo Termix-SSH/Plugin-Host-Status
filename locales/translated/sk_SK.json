@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval kontroly (sekundy)",
         "description": "Ako často sa bude každý hostiteľ kontrolovať. Hostiteľ si môže nastaviť vlastný interval v nastaveniach stavu. Hodnota od 5 do 3600."
+      },
+      "alertOnOffline": {
+        "label": "Upozornenie, keď hostiteľ prestane byť dostupný",
+        "description": "Pošlite majiteľovi hostiteľa upozornenie, keď skontrolovaný hostiteľ prestane odpovedať a keď sa znova stane dostupným."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Kontrola stavu hostiteľa",
+      "description": "Skontrolujte, či sú hostitelia, ktoré vidíte, online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Kontrola stavu hostiteľa"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

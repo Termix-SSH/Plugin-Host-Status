@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Intervalo de comprobación (segundos)",
         "description": "Frecuencia con la que se comprueba cada host. Un host puede establecer su propio intervalo en la configuración de su estado. De 5 a 3600."
+      },
+      "alertOnOffline": {
+        "label": "Alertar cuando un host se desconecte",
+        "description": "Enviar una alerta al propietario del host cuando un host seleccionado deje de responder y cuando vuelva a estar disponible."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Consultar el estado del host",
+      "description": "Consultar si los hosts visibles están en línea."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Consultar el estado del host"
+    },
+    "online": {
+      "title": "En línea"
     }
   }
 }

@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Tjekinterval (sekunder)",
         "description": "Hvor ofte hver vært tjekkes. En vært kan indstille sit eget interval i statusindstillingerne. Fra 5 til 3600."
+      },
+      "alertOnOffline": {
+        "label": "Advar, når en vært går offline",
+        "description": "Send en advarsel til værtens ejer, når en markeret vært holder op med at svare, og når den er tilbage."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Tjek værtstatus",
+      "description": "Tjek, om værter, du kan se, er online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Tjek værtstatus"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

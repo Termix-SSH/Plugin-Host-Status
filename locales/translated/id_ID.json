@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval pengecekan (detik)",
         "description": "Seberapa sering setiap host diperiksa. Host dapat mengatur intervalnya sendiri di pengaturan statusnya. Dari 5 hingga 3600."
+      },
+      "alertOnOffline": {
+        "label": "Peringatan saat host tidak tersedia",
+        "description": "Kirim peringatan kepada pemilik host saat host yang ditandai berhenti merespons dan saat kembali tersedia."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Periksa status host",
+      "description": "Periksa apakah host yang dapat Anda lihat sedang tersedia."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Periksa status host"
+    },
+    "online": {
+      "title": "Tersedia"
     }
   }
 }

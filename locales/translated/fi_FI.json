@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Tarkistusväli (sekuntia)",
         "description": "Kuinka usein jokainen isäntä tarkistetaan. Isäntä voi määrittää oman tarkistusvälin tilasetinguksissaan. Arvot 5–3600."
+      },
+      "alertOnOffline": {
+        "label": "Ilmoita, kun isäntä menee offline-tilaan",
+        "description": "Lähetä isännän omistajalle ilmoitus, kun valittu isäntä lakkaa vastaamasta ja kun se on taas saatavilla."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Tarkista isännän tila",
+      "description": "Tarkista, ovatko näkyvissä olevat isännät online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Tarkista isännän tila"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

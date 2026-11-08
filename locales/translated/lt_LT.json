@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Tikrinimo intervalas (sekundės)",
         "description": "Kaip dažnai tikrinamas kiekvienas serveris. Serveris gali nustatyti savo intervalą jo būsenos nustatymuose. Nuo 5 iki 3600."
+      },
+      "alertOnOffline": {
+        "label": "Įspėti, kai serveris tampa nepasiekiamas",
+        "description": "Siųsti serverio savininkui pranešimą, kai pažymėtas serveris nustoja atsakyti ir kai vėl tampa pasiekiamas."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Tikrinti serverio būseną",
+      "description": "Tikrinti, ar matomi serveriai yra pasiekiami."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Tikrinti serverio būseną"
+    },
+    "online": {
+      "title": "Pasiekiamas"
     }
   }
 }

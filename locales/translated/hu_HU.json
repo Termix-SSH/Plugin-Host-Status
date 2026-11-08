@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Ellenőrzési időköz (másodperc)",
         "description": "Mennyire gyakran legyenek ellenőrizve a hostok. Egy host saját időközt is beállíthat a státuszbeállításaiban. 5 és 3600 között."
+      },
+      "alertOnOffline": {
+        "label": "Értesítés, amikor egy host offline állapotba kerül",
+        "description": "Küldjön értesítést a host tulajdonosának, amikor egy kiválasztott host nem válaszol, és amikor újra elérhetővé válik."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Host állapotának ellenőrzése",
+      "description": "Ellenőrizze, hogy a látható hostok online vannak-e."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Host állapotának ellenőrzése"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Pārbaudes intervāls (sekundes)",
         "description": "Cik bieži tiek pārbaudīts katrs resursdators. Resursdators var iestatīt savu intervālu tā statusa iestatījumos. No 5 līdz 3600."
+      },
+      "alertOnOffline": {
+        "label": "Brīdināt, kad resursdators kļūst nepieejams",
+        "description": "Nosūtīt resursdatora īpašniekam brīdinājumu, kad atzīmētais resursdators vairs neatbild un kad tas atkal kļūst pieejams."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Pārbaudīt resursdatora statusu",
+      "description": "Pārbaudīt, vai redzamie resursdatori ir tiešsaistē."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Pārbaudīt resursdatora statusu"
+    },
+    "online": {
+      "title": "Tiešsaistē"
     }
   }
 }

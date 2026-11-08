@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Intervallo di controllo (secondi)",
         "description": "Frequenza con cui viene controllato ogni host. Un host può impostare il proprio intervallo nelle impostazioni di stato. Da 5 a 3600."
+      },
+      "alertOnOffline": {
+        "label": "Avvisa quando un host va offline",
+        "description": "Invia un avviso al proprietario dell'host quando un host selezionato smette di rispondere e quando torna online."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Verifica lo stato dell'host",
+      "description": "Verifica se gli host visibili sono online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Verifica lo stato dell'host"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

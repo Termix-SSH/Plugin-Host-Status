@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "检查间隔（秒）",
         "description": "检查每台主机的频率。主机可以在其状态设置中设置自己的间隔。范围为 5 到 3600。"
+      },
+      "alertOnOffline": {
+        "label": "主机离线时发送警报",
+        "description": "当已勾选的主机停止响应以及重新上线时，向其所有者发送警报。"
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "查看主机状态",
+      "description": "查看您可见的主机是否在线。"
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "检查主机状态"
+    },
+    "online": {
+      "title": "在线"
     }
   }
 }

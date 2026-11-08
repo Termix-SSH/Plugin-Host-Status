@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval provjere (sekunde)",
         "description": "Koliko često se svaki host provjerava. Host može postaviti vlastiti interval u postavkama statusa. Od 5 do 3600."
+      },
+      "alertOnOffline": {
+        "label": "Upozori kada host postane nedostupan",
+        "description": "Pošalji vlasniku hosta obavijest kada označeni host prestane odgovarati i kada ponovno postane dostupan."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Provjeri status hosta",
+      "description": "Provjeri jesu li hostovi koje vidiš dostupni."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Provjeri status hosta"
+    },
+    "online": {
+      "title": "Dostupan"
     }
   }
 }

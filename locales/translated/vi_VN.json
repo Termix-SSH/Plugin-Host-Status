@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Khoảng thời gian kiểm tra (giây)",
         "description": "Tần suất kiểm tra mỗi host. Một host có thể đặt riêng khoảng thời gian của nó trong cài đặt trạng thái. Từ 5 đến 3600."
+      },
+      "alertOnOffline": {
+        "label": "Cảnh báo khi máy chủ ngoại tuyến",
+        "description": "Gửi cảnh báo cho chủ sở hữu máy chủ khi máy chủ được chọn ngừng phản hồi và khi nó hoạt động trở lại."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Kiểm tra trạng thái máy chủ",
+      "description": "Kiểm tra xem các máy chủ bạn có thể xem có đang trực tuyến hay không."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Kiểm tra trạng thái máy chủ"
+    },
+    "online": {
+      "title": "Trực tuyến"
     }
   }
 }

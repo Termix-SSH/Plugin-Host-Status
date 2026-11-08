@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "확인 간격 (초)",
         "description": "각 호스트의 상태를 확인하는 빈도입니다. 호스트는 상태 설정에서 자체 간격을 설정할 수 있습니다. 5에서 3600 사이로 설정하세요."
+      },
+      "alertOnOffline": {
+        "label": "호스트가 오프라인 상태가 되면 알림",
+        "description": "선택한 호스트가 응답을 멈추거나 다시 연결될 때 소유자에게 알림을 보냅니다."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "호스트 상태 확인",
+      "description": "보이는 호스트가 온라인 상태인지 확인합니다."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "호스트 상태 확인"
+    },
+    "online": {
+      "title": "온라인"
     }
   }
 }

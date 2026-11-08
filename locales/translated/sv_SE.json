@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Kontrollintervall (sekunder)",
         "description": "Hur ofta varje värd kontrolleras. En värd kan ställa in sitt eget intervall i sina statusinställningar. Mellan 5 och 3600."
+      },
+      "alertOnOffline": {
+        "label": "Varna när en värd blir offline",
+        "description": "Skicka en varning till värdens ägare när en markerad värd slutar svara och när den är tillbaka."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Kontrollera värdstatus",
+      "description": "Kontrollera om de värdar du kan se är online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Kontrollera värdstatus"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

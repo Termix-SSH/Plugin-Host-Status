@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval preverjanja (sekunde)",
         "description": "Kako pogosto se vsak gostitelj preveri. Gostitelj lahko v nastavitvah stanja določi svoj lasten interval. Od 5 do 3600."
+      },
+      "alertOnOffline": {
+        "label": "Obvesti, ko strežnik postane nedosegljiv",
+        "description": "Pošljite lastniku strežnika obvestilo, ko označen strežnik preneha odgovarjati in ko spet postane dosegljiv."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Preveri stanje strežnika",
+      "description": "Preveri, ali so strežniki, ki jih lahko vidiš, dosegljivi."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Preveri stanje strežnika"
+    },
+    "online": {
+      "title": "Dosegljiv"
     }
   }
 }

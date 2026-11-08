@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Prüfintervall (Sekunden)",
         "description": "Wie oft jeder Host überprüft wird. Ein Host kann sein eigenes Intervall in seinen Status-Einstellungen festlegen. Von 5 bis 3600."
+      },
+      "alertOnOffline": {
+        "label": "Benachrichtigung, wenn ein Host offline geht",
+        "description": "Sendet dem Besitzer des Hosts eine Benachrichtigung, wenn ein ausgewählter Host nicht mehr antwortet und wenn er wieder erreichbar ist."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Host-Status prüfen",
+      "description": "Prüfen, ob sichtbare Hosts online sind."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Host-Status prüfen"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

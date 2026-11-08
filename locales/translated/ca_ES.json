@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Interval de comprovació (segons)",
         "description": "Freqüència amb què es comprova cada host. Un host pot definir el seu propi interval a la configuració d'estat. De 5 a 3600."
+      },
+      "alertOnOffline": {
+        "label": "Notifica quan un host es desconnecta",
+        "description": "Envia una notificació al propietari de l'host quan un host seleccionat deixi de respondre i quan torni a estar disponible."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Comprovar l'estat de l'host",
+      "description": "Comprova si els hosts que pots veure estan en línia."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Comprovar l'estat de l'host"
+    },
+    "online": {
+      "title": "En línia"
     }
   }
 }

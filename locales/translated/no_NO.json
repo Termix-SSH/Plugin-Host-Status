@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Sjekkeintervall (sekunder)",
         "description": "Hvor ofte hver vert sjekkes. En vert kan angi sitt eget intervall i statusinnstillingene. Fra 5 til 3600."
+      },
+      "alertOnOffline": {
+        "label": "Varsle når en vert går offline",
+        "description": "Send en varsel til vertens eier når en avkrysset vert slutter å svare og når den er tilbake."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Sjekk vertstatus",
+      "description": "Sjekk om vertene du kan se er online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Sjekk vertstatus"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

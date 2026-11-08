@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Intervalo de verificação (segundos)",
         "description": "Com que frequência cada host é verificado. Um host pode definir o seu próprio intervalo nas definições de estado. De 5 a 3600."
+      },
+      "alertOnOffline": {
+        "label": "Avisar quando um host ficar offline",
+        "description": "Enviar um alerta ao proprietário do host quando um host selecionado deixar de responder e quando voltar a estar disponível."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Verificar o estado do host",
+      "description": "Verificar se os hosts que pode ver estão online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Verificar o estado do host"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

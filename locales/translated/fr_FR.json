@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Intervalle de vérification (secondes)",
         "description": "Fréquence de vérification de chaque hôte. Un hôte peut définir son propre intervalle dans ses paramètres de statut. De 5 à 3600."
+      },
+      "alertOnOffline": {
+        "label": "Alerter lorsqu'un hôte passe hors ligne",
+        "description": "Envoyer une alerte au propriétaire de l'hôte lorsqu'un hôte coché cesse de répondre et lorsqu'il redevient disponible."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Vérifier l'état des hôtes",
+      "description": "Vérifier si les hôtes visibles sont en ligne."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Vérifier l'état des hôtes"
+    },
+    "online": {
+      "title": "En ligne"
     }
   }
 }

@@ -100,6 +100,8 @@ describe("activate", () => {
         "hosts:status-provide",
         "network:probe",
         "network:serve",
+        "notify:send",
+        "operations:provide",
         "ssh:connect",
         "users:impersonate",
       ].sort(),

@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Controle-interval (seconden)",
         "description": "Hoe vaak elke host wordt gecontroleerd. Een host kan zijn eigen interval instellen in de statusinstellingen. Van 5 tot 3600."
+      },
+      "alertOnOffline": {
+        "label": "Waarschuwing wanneer een host offline gaat",
+        "description": "Stuur de eigenaar van de host een waarschuwing wanneer een geselecteerde host niet meer reageert en wanneer deze weer beschikbaar is."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Hoststatus controleren",
+      "description": "Controleren of hosts die je kunt zien online zijn."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Hoststatus controleren"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

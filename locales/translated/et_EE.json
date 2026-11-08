@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Kontrolli sagedus (sekundites)",
         "description": "Kui tihti iga hosti kontrollitakse. Host saab oma sageduse määrata oma oleku seadetes. Väärtus peab olema vahemikus 5–3600."
+      },
+      "alertOnOffline": {
+        "label": "Teavita, kui host läheb offline'i",
+        "description": "Saada hosti omanikule teavitus, kui valitud host lakkab vastamast ja kui ta on taas saadaval."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Hosti oleku kontrollimine",
+      "description": "Kontrolli, kas nähtavad hostid on online."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Hosti oleku kontrollimine"
+    },
+    "online": {
+      "title": "Online"
     }
   }
 }

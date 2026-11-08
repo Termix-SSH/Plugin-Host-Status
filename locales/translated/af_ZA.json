@@ -4,7 +4,25 @@
       "intervalSeconds": {
         "label": "Kontroleinterval (sekondes)",
         "description": "Hoe gereeld elke gasheer gecontroleer word. 'n Gasheer kan sy eie interval in sy statusinstellings stel. Van 5 tot 3600."
+      },
+      "alertOnOffline": {
+        "label": "Waarskuwing wanneer 'n gasheer aflyn gaan",
+        "description": "Stuur die gasheer se eienaar 'n waarskuwing wanneer 'n gemerkte gasheer ophou antwoord en wanneer dit terug is."
       }
+    }
+  },
+  "permissions": {
+    "view": {
+      "title": "Gasheerstatus kontroleer",
+      "description": "Kontroleer of gasheer wat jy kan sien, aanlyn is."
+    }
+  },
+  "operations": {
+    "check": {
+      "title": "Gasheerstatus kontroleer"
+    },
+    "online": {
+      "title": "Aanlyn"
     }
   }
 }
