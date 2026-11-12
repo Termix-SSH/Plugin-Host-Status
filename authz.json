@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Termix-SSH/Termix/main/scripts/authz/authz.schema.json",
+  "seed": [],
+  "routes": {
+    "GET /plugin-api/host-status": {
+      "access": "user"
+    },
+    "POST /plugin-api/host-status/refresh": {
+      "access": "user"
+    },
+    "GET /plugin-api/host-status/settings": {
+      "access": "admin"
+    },
+    "PUT /plugin-api/host-status/settings": {
+      "access": "user"
+    }
+  }
+}
