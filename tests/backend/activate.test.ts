@@ -43,6 +43,7 @@ async function boot(options: {
   reachable?: (target: string | number, port?: number) => boolean;
 }) {
   mock = createMockCtx({
+    sandbox: true,
     pluginId: manifest.id,
     manifest,
     capabilities: options.capabilities ?? manifest.capabilities,

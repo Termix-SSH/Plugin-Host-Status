@@ -56,7 +56,7 @@ export interface HostStatusDeps {
     target: StatusTarget,
     port: number,
   ) => Promise<boolean>;
-  hasActiveSession: (hostId: number) => boolean;
+  hasActiveSession: (hostId: number) => boolean | Promise<boolean>;
   /** Calls the listener when a session opens or closes. */
   onSession: (
     listener: (hostId: number, online: boolean) => void,
@@ -343,7 +343,7 @@ export class HostStatusService implements PluginHostStatusProvider {
 
   private async pingOnce(target: StatusTarget): Promise<boolean> {
     try {
-      if (this.deps.hasActiveSession(target.id)) return true;
+      if (await this.deps.hasActiveSession(target.id)) return true;
       const port = await this.portFor(target);
       return target.jumpHosts.length > 0
         ? await this.deps.pingThroughJumpHosts(target, port)
