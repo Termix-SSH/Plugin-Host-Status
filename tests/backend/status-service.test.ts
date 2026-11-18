@@ -1,3 +1,4 @@
+import { AsyncLocalStorage } from "node:async_hooks";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import {
   HostStatusService,
@@ -107,6 +108,26 @@ afterEach(() => {
 });
 
 describe("HostStatusService", () => {
+  it("runs checks outside the request that started them", async () => {
+    // Stands in for the plugin process's request token store.
+    const request = new AsyncLocalStorage<string>();
+    const { service, ping } = setup([target(3)]);
+    active = service;
+    const seen: Array<string | undefined> = [];
+    ping.mockImplementation(async () => {
+      seen.push(request.getStore());
+      return true;
+    });
+    await request.run("request-token", () =>
+      service.statusesFor("owner", null),
+    );
+    await flush();
+    await vi.advanceTimersByTimeAsync(80_000);
+    await flush();
+    expect(seen.length).toBeGreaterThanOrEqual(2);
+    expect(seen.every((value) => value === undefined)).toBe(true);
+  });
+
   it.each([{ jumpHosts: [] }, { jumpHosts: [{ hostId: 9 }] }])(
     "skips probes while a session is open, including jump hosts: %j",
     async ({ jumpHosts }) => {

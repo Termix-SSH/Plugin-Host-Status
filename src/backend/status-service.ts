@@ -13,6 +13,7 @@
  * The first request waits briefly for those first checks so it is not empty.
  */
 
+import { AsyncResource } from "node:async_hooks";
 import type {
   PluginHostProbeTarget,
   PluginHostStatusEntry,
@@ -56,7 +57,7 @@ export interface HostStatusDeps {
     target: StatusTarget,
     port: number,
   ) => Promise<boolean>;
-  hasActiveSession: (hostId: number) => boolean;
+  hasActiveSession: (hostId: number) => boolean | Promise<boolean>;
   /** Calls the listener when a session opens or closes. */
   onSession: (
     listener: (hostId: number, online: boolean) => void,
@@ -94,6 +95,9 @@ export class HostStatusService implements PluginHostStatusProvider {
   private readonly startedUsers = new Set<string>();
   private readonly portResolvers = new Map<string, Set<PortResolver>>();
   private readonly limiter = new ConcurrentLimiter(20);
+  // Made in activate. Checks run here, not in the request that started them:
+  // a request's actor expires soon after the reply in a plugin process.
+  private readonly background = new AsyncResource("host-status-checks");
   private unsubscribers: Array<() => void> = [];
 
   constructor(private readonly deps: HostStatusDeps) {}
@@ -316,8 +320,8 @@ export class HostStatusService implements PluginHostStatusProvider {
   private probe(target: StatusTarget): Promise<void> {
     const running = this.inFlight.get(target.id);
     if (running) return running;
-    const job = this.limiter
-      .run(() => this.probeNow(target))
+    const job = this.background
+      .runInAsyncScope(() => this.limiter.run(() => this.probeNow(target)))
       .catch((error) => {
         this.deps.warn(`Status check failed for host ${target.id}`, error);
       })
@@ -343,7 +347,7 @@ export class HostStatusService implements PluginHostStatusProvider {
 
   private async pingOnce(target: StatusTarget): Promise<boolean> {
     try {
-      if (this.deps.hasActiveSession(target.id)) return true;
+      if (await this.deps.hasActiveSession(target.id)) return true;
       const port = await this.portFor(target);
       return target.jumpHosts.length > 0
         ? await this.deps.pingThroughJumpHosts(target, port)

@@ -1,7 +1,7 @@
 {
   "id": "host-status",
   "name": "Host Status",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Shows if each host is online with a dot in the host list, checked by connecting to its port.",
   "author": {
     "name": "Termix"
@@ -21,8 +21,8 @@
   ],
   "env": [],
   "engine": {
-    "termix": ">=26.11.1-0",
-    "api": "^1.5"
+    "termix": ">=26.11.2-0",
+    "api": "^2.4.0"
   },
   "capabilities": [
     "hosts:read",
@@ -35,6 +35,9 @@
     "notify:send",
     "operations:provide"
   ],
+  "sandbox": {
+    "events": ["host.session.status", "host.updated", "host.deleted"]
+  },
   "locales": "locales",
   "platforms": ["linux", "win32", "darwin"],
   "contributes": {
